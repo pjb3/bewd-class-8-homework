@@ -13,6 +13,10 @@ app.post('/', function (req, res) {
   res.send('POST index page.');
 });
 
+app.get('/tweets', function (req, res) {
+  res.send('These are your tweets');
+});
+
 //boot up the server
 app.listen(port);
 console.log('The server is listening to ' + port);
