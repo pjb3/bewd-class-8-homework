@@ -21,6 +21,10 @@ app.get('/user', function (req, res) {
   res.send('this is your user account');
 });
 
+app.get('/login', function (req, res) {
+  res.send('Hello, '+req.query.user);
+});
+
 //boot up the server
 app.listen(port);
 console.log('The server is listening to ' + port);
