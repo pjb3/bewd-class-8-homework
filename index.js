@@ -17,6 +17,10 @@ app.get('/tweets', function (req, res) {
   res.send('These are your tweets');
 });
 
+app.get('/user', function (req, res) {
+  res.send('this is your user account');
+});
+
 //boot up the server
 app.listen(port);
 console.log('The server is listening to ' + port);
